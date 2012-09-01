@@ -232,9 +232,9 @@ def add_should_service():
                     should_str += "$syslog "
                     syslog_flag = False
 
-                elif (unit == "remote-fs.target" or unit ==
-                    "proc-fs-nfsd.mount" or unit ==
-                    "var-lib-nfs-rpc_pipefs.mount") and remote_fs_flag:
+                elif (unit in ("remote-fs.target",
+                      "proc-fs-nfsd.mount",
+                      "var-lib-nfs-rpc_pipefs.mount")) and remote_fs_flag:
                     should_str += "$remote_fs "
                     remote_fs_flag = False
 
