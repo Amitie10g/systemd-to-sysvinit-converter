@@ -631,7 +631,7 @@ def build_call_arguments():
             	'\t\t;;\n'
         	'\t*)\n'
             	'\t\techo "$Usage: $prog %s"\n'
-		'\t\texit2\n'
+		'\t\texit 2\n'
     	'esac') %   (exec_reload)
 
     else:
